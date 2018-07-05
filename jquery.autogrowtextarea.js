@@ -78,9 +78,8 @@ jQuery.fn.autoGrow = function(options) {
 		this.style.minHeight = this.rows+"em";
 
 		// Bind the textarea's event
-		this.onkeyup = growTextarea;
 		this.onfocus = growTextarea;
-		this.input   = growTextarea;
+		this.oninput   = growTextarea;
 
 		// Fire the event for text already present
 		sendContentToMirror(this);
